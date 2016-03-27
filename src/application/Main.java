@@ -30,23 +30,12 @@ public class Main extends Application {
 		ObservableList<Produto> produtos = new ProdutoDAO().lista();
 		
 		TableView tableView = new TableView<>(produtos);
-	
-		TableColumn nomeColumn = new TableColumn("Nome");
-		nomeColumn.setMinWidth(180);
-		nomeColumn.setCellValueFactory(new PropertyValueFactory("nome"));
 		
-		TableColumn descColumn = new TableColumn("Descrição");
-		descColumn.setMinWidth(230);
-		descColumn.setCellValueFactory(new PropertyValueFactory("descricao"));
-		
-		TableColumn valorColumn = new TableColumn("Valor");
-		valorColumn.setMinWidth(60);
-		valorColumn.setCellValueFactory(new PropertyValueFactory("valor"));
-		
-		TableColumn isbnColumn = new TableColumn("ISBN");
-		isbnColumn.setMinWidth(180);
-		isbnColumn.setCellValueFactory(new PropertyValueFactory("isbn"));
-		
+		TableColumn nomeColumn = criaColuna("Nome", 180, "nome");
+		TableColumn descColumn = criaColuna("Descrição", 230, "descricao");
+		TableColumn valorColumn = criaColuna("Valor", 60, "valor");
+		TableColumn isbnColumn = criaColuna("ISBN", 180, "isbn");
+			
 		tableView.getColumns().addAll(nomeColumn, descColumn, valorColumn, isbnColumn);
 		
 		final VBox vbox = new VBox(tableView);
@@ -102,6 +91,13 @@ public class Main extends Application {
 		} catch (IOException e) {
 			System.out.println("Erro ao exportar: " + e);
 		}
+	}
+	
+	private TableColumn<Produto, String> criaColuna(String titulo, int largura, String atributo) {
+		TableColumn<Produto, String> column = new TableColumn<>(titulo);
+		column.setMinWidth(largura);
+		column.setCellValueFactory(new PropertyValueFactory<Produto, String>(atributo));
+		return column;
 	}
 	
 	public static void main(String[] args) {

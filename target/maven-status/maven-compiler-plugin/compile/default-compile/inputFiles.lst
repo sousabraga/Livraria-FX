@@ -1,0 +1,15 @@
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/LivroFisico.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/Ebook.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/Produto.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/CarrinhoDeCompras.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/Autor.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/Revista.java
+/home/matheus/workspace/livraria-fx/src/application/Main.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/exception/AutorNuloException.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/Editora.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/repositorio/ProdutoDAO.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/Livro.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/repositorio/Exportador.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/repositorio/ConnectionFactory.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/Promocional.java
+/home/matheus/workspace/livraria-fx/src/br/com/casadocodigo/livraria/produtos/MiniLivro.java
