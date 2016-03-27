@@ -1,0 +1,31 @@
+#label-listagem {
+	-fx-font-size: 30px;
+	-fx-padding: 20 0 0 10;
+}
+
+#label-progresso {
+	-fx-translate-x: 485;
+	-fx-translate-y: 30;
+}
+
+#label-footer {
+	-fx-font-size: 15px;
+	-fx-translate-x: 180;
+	-fx-translate-y: 480;
+}
+
+#vbox {
+	-fx-padding: 70 0 0 10;
+}
+
+.button {
+	-fx-translate-x: 575;
+	-fx-translate-y: 25;
+	-fx-background-color: linear-gradient(#61a2b1, #2A5058);
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+	-fx-text-fill: white; 
+}
+
+.button:hover {
+	-fx-background-color: rgba(31, 149, 206, 0.71);
+}
